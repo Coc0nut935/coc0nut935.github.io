@@ -52,7 +52,7 @@ round-avatar: true
 # 取消注释你想显示的链接并添加你的信息。
 social-network-links:
 # email: "someone@example.com"
-  rss: true  # 如果你不想在底部显示 RSS 链接，请删除此行
+  rss: false  # 如果你不想在底部显示 RSS 链接，请删除此行
 # facebook: deanattali
   github: coc0nut935
 # twitter: daattali
