@@ -23,8 +23,10 @@ navbar-links:
   Home: "https://coc0nut935.github.io/"
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - 小林Coding: "https://xiaolincoding.com/"
+    - JavaGuide: "https://javaguide.cn/home.html"
+    - 力扣Hot100: "https://leetcode.cn/studyplan/top-100-liked/"
+    - Hello Agent: "https://hello-agents.datawhale.cc/#/./README"
   Author's GitHhub: "https://github.com/Coc0nut935"
 
 ################
