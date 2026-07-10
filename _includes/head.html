@@ -182,8 +182,23 @@
       object-fit: cover;
       z-index: -1;
     }
-    body {
-      background: transparent;
+    body,
+    .navbar-custom,
+    #footer {
+      background: transparent !important;
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-brand:hover,
+    .navbar-custom .nav-link,
+    .navbar-custom .nav-link:hover {
+      color: #fff;
+    }
+    #footer {
+      border-top: none !important;
+    }
+    .intro-header h1,
+    .page-subheading {
+      color: #fff !important;
     }
   </style>
 
