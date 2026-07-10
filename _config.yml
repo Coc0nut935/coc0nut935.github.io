@@ -86,7 +86,7 @@ social-network-links:
 
 # 如果你想让你的网站生成 RSS 订阅源，请提供一段描述
 # 订阅源的 URL 将是 https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: This website is a virtual proof that I'm awesomeThis website is a virtual proof that I'm awesome
 
 ###########################
 # --- 通用选项 --- #
@@ -152,7 +152,7 @@ footer-hover-col: "#0085A1"
 
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+page-img: "/assets/img/bgimage.png"
 
 # 建议移动浏览器使用的主题颜色。仅少数移动浏览器支持此功能。
 #mobile-theme-col: "#0085A1"
