@@ -1,16 +1,14 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+我是Coc0nut:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+这个网站是一个会记录我学习计算机过程中所遇到的问题以及思考。我用它来记录我的课程笔记、算法、八股、个人项目和个人兴趣。
 
-What else do you need?
+### 我的简介
 
-### My story
+- 我是一名计科专业的本科生
+- 主要学习的方向是后端开发，ai应用开发
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
