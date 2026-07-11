@@ -21,12 +21,13 @@ author: Some Person
 
 navbar-links:
   主页: "https://coc0nut935.github.io/"
-  关于: "aboutme"
+  标签: "tags"
   资源:
     - 小林Coding: "https://xiaolincoding.com/"
     - JavaGuide: "https://javaguide.cn/home.html"
     - 力扣Hot100: "https://leetcode.cn/studyplan/top-100-liked/"
     - Hello Agent: "https://hello-agents.datawhale.cc/#/./README"
+  关于: "aboutme"
   Author's GitHub: "https://github.com/Coc0nut935"
 
 ################
