@@ -1,0 +1,73 @@
+<div id="toc-container">
+  <div id="toc-title">目录</div>
+  <nav id="toc"></nav>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var post = document.querySelector('.blog-post');
+  if (!post) return;
+
+  var headings = post.querySelectorAll('h1, h2, h3, h4');
+  if (headings.length < 2) {
+    document.getElementById('toc-container').style.display = 'none';
+    return;
+  }
+
+  var toc = document.getElementById('toc');
+  var idMap = {};
+
+  headings.forEach(function(h, i) {
+    if (!h.id) {
+      var base = h.textContent.trim().replace(/\s+/g, '-').replace(/[^\w一-鿿-]/g, '');
+      if (idMap[base]) {
+        idMap[base]++;
+        base = base + '-' + idMap[base];
+      } else {
+        idMap[base] = 1;
+      }
+      h.id = base || ('heading-' + i);
+    }
+
+    var level = parseInt(h.tagName[1]);
+    var link = document.createElement('a');
+    link.href = '#' + h.id;
+    link.textContent = h.textContent;
+    link.className = 'toc-link toc-h' + level;
+    link.setAttribute('data-target', h.id);
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.getElementById(h.id);
+      if (target) {
+        var offset = 80;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+        history.replaceState(null, '', '#' + h.id);
+      }
+    });
+    toc.appendChild(link);
+  });
+
+  // scroll-spy
+  var tocLinks = toc.querySelectorAll('.toc-link');
+  function highlight() {
+    var scrollPos = window.scrollY + 100;
+    var current = null;
+    for (var i = headings.length - 1; i >= 0; i--) {
+      if (headings[i].offsetTop <= scrollPos) {
+        current = headings[i].id;
+        break;
+      }
+    }
+    tocLinks.forEach(function(link) {
+      if (link.getAttribute('data-target') === current) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', highlight);
+  highlight();
+});
+</script>
